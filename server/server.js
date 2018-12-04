@@ -7,7 +7,7 @@ const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy;
 
 const users = [
-  { id: 'abc', email: 'test@test.com', password: 'password' },
+  { id: '2f24vvg', email: 'test@test.com', password: 'password' },
 ]
 
 // tell passport how to serialize the user
@@ -48,7 +48,7 @@ app.use(session({
     return uuid()
   },
   store: new FileStore(),
-  secret: '',
+  secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true
 }))
