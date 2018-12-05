@@ -56,9 +56,9 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.get('/', (req, res) => {
-  console.log('Inside the homepage callback function')
+  console.log('Inside the homepage callback')
   console.log(req.sessionID)
-  res.send(`Hit home page.`)
+  res.send(`You got home page!\n`)
 })
 
 app.get('/login', (req, res) => {
